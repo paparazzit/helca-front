@@ -7,6 +7,7 @@
 	--deep-blue: #0c5286; /*rgb(12,82,134,1)*/
 	--bg-green: #a2d45e; /*rgb(162,212,94,1)*/
 	--bg-pink: #ffb98e; /*rgb(255,185,142,1)*/
+	--black-text: black;
 	--gray-background: #f5f5f5; /*rgba(245,245,245,1)*/
 	--font: "Roboto", Arial, Helvetica, "Open Sans";
 	--font-size: 16px;
@@ -28,6 +29,21 @@ body {
 	font-family: var(--font);
 	font-size: var(--font-size);
 }
+a {
+	text-decoration: none;
+	color: white;
+}
+p {
+	color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--bg-blue);
+}
 ul {
 	list-style: none;
 }
@@ -47,7 +63,548 @@ nav .active {
 	font-size: 1rem;
 	letter-spacing: 1.5px;
 }
+.vertical h2 {
+	font-size: 4.5rem;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
 
-/***********
-ANIMACIJE
-***********/
+/***************
+       NAV
+****************/
+nav {
+	background-color: var(--bg-blue);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px calc(var(--spacer) * 2);
+}
+nav .dropdownLink {
+	display: none;
+}
+nav .logo {
+	flex: 0 0 30%;
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+nav .logo img {
+	width: 20%;
+}
+
+nav .topnav {
+	display: flex;
+	flex: 0 0 30%;
+}
+nav .topnav li {
+	margin-right: 50px;
+}
+nav .right {
+	flex: 0 0 30%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+nav .right .socials {
+	display: flex;
+	align-items: center;
+}
+
+nav .right .socials a {
+	margin-right: 1rem;
+}
+nav .right .shop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav .right .shop p {
+	margin-left: 1rem;
+	border: 1px solid white;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+nav .right .lang span {
+	margin: 0 5px;
+	color: white !important;
+}
+/******************
+    HEADER
+*******************/
+header {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 90vh;
+	position: relative;
+}
+header .prduct-left {
+	width: 50%;
+	height: 100%;
+	background-color: var(--bg-blue);
+	text-align: center;
+}
+header .prduct-left img {
+	width: 100%;
+}
+/* LOGO */
+header > img {
+	position: absolute;
+	width: 20%;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+/* SLIDER */
+header .slide {
+	width: 50%;
+	height: 100%;
+}
+.slide .owl-carousel {
+	top: 60%;
+	transform: translate(0, -60%);
+	width: 60%;
+	margin: auto;
+	padding: 0 30px;
+}
+
+.slide .owl-carousel .item {
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+.item h2 {
+	color: deepskyblue;
+	font-size: 3.5rem;
+	font-weight: 300;
+	margin-bottom: calc(var(--spacer) * 2);
+}
+.item p {
+	font-size: 0.9rem;
+	color: var(--black-text);
+	letter-spacing: 1.3px;
+	margin-bottom: calc(var(--spacer) * 2);
+}
+.slide .owl-carousel .item .btn {
+	padding: 15px 30px;
+	font-size: 0.9rem;
+}
+.slide .owl-carousel .owl-dots {
+	margin-top: 50px !important;
+}
+
+/******************
+    HEALTH
+*******************/
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+section article {
+	flex: 0 0 50%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 100%;
+}
+
+.health article div {
+	flex: 0 0 50%;
+	height: 50%;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: calc(var(--spacer) * 2);
+}
+.health article div p {
+	color: var(--deep-blue);
+	font-size: 0.9rem;
+}
+.health article div h2 {
+	color: var(--deep-blue);
+	margin-bottom: var(--spacer);
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+.health article div h3 {
+	color: var(--deep-blue);
+	margin-bottom: var(--spacer);
+	font-size: 2.6rem;
+	font-weight: 300;
+	margin-top: 40px;
+}
+.health .right div:last-child {
+	background-color: var(--deep-blue);
+}
+.health .right div:last-child p,
+.health .right div:last-child h2 {
+	color: white;
+}
+
+.health .left {
+	background-image: url(img/morning-img.png);
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	justify-content: flex-end !important;
+}
+.health .left div {
+	background-color: rgba(255, 255, 255, 0.5);
+	align-self: flex-end;
+}
+
+/******************
+    WEB-NEWS
+*******************/
+
+.web-news .webshop {
+	background-color: var(--bg-green);
+	position: relative;
+}
+.vertical {
+	position: absolute;
+	transform: rotate(-90deg);
+	top: 15%;
+	left: -10%;
+}
+.web-news a.link {
+	color: var(--deep-blue);
+	font-size: 1.5rem;
+	text-decoration: underline;
+}
+.web-news .vertical h2 {
+	color: white;
+	font-size: 5rem;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+.web-news .wrapper {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.web-news .wrapper img {
+	width: 40%;
+}
+.web-news .wrapper .text {
+	padding-left: 30px;
+}
+.web-news .wrapper h4 {
+	color: white;
+	font-size: 2.3rem;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+.web-news .wrapper p {
+	color: white;
+	font-size: 0.95rem;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+.wrapper .text p:nth-child(3) {
+	font-size: 1.1rem;
+}
+.wrapper .text p:nth-child(4) {
+	font-size: 1.3rem;
+}
+.wrapper .text .btn {
+	padding: 15px 40px;
+	font-size: 0.95rem;
+}
+
+.news {
+	position: relative;
+
+	padding: 0 100px;
+}
+.news .vertical {
+	position: absolute;
+	transform: rotate(-90deg);
+	top: 8%;
+	left: -5%;
+}
+.news .vertical h2 {
+	color: var(--text-blue);
+}
+.news .wrapper {
+	width: 100%;
+	height: 85%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.card-body {
+	flex: 0 0 48%;
+	display: flex;
+	flex-direction: column;
+	height: 47%;
+}
+.card-body .card-img {
+	width: 100%;
+	height: 50%;
+}
+.card-body .card-img img {
+	width: 100%;
+	height: 100%;
+}
+.card-body .card-text {
+	height: 50%;
+	background-color: #f3f3f3;
+	padding: 0 20px;
+}
+.card-body .card-text .card-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.card-body .card-text h4 {
+	color: var(--deep-blue);
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+.card-body .card-text .card-heading p {
+	color: var(--deep-blue);
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.card-body .card-text p {
+	color: black;
+}
+.card-body .card-text a {
+	color: var(--deep-blue);
+	font-weight: 500;
+}
+.card-body .card-text .card-heading p,
+.card-body .card-text .card-heading h4 {
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+.card-body .card-content p {
+	font-size: 0.85rem;
+}
+.card-content p.subheading {
+	font-style: italic;
+	color: var(--deep-blue) !important;
+	font-size: 0.95rem;
+	margin-bottom: 10px;
+}
+.buttons .btn {
+	width: 40%;
+	height: 35px;
+	font-size: 0.85rem;
+}
+.buttons .green {
+	background-color: var(--bg-green);
+	margin-left: 30px;
+	color: var(--deep-blue);
+}
+
+/******************
+    BRAND-LINES
+*******************/
+
+/* left */
+.brand-lines .left {
+	position: relative;
+	display: block;
+}
+.brand-lines .left .gray {
+	height: 50%;
+	width: 100%;
+	background-color: var(--gray-background);
+	position: relative;
+}
+.brand-lines .left .round-logos {
+	width: 80%;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+}
+.round-logos img {
+	margin-right: 30px;
+}
+.round-logos img:last-child {
+	margin-right: 0;
+}
+.brand-lines .text {
+	width: 80%;
+	height: 50%;
+
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--deep-blue);
+	padding: 0 50px;
+}
+.brand-lines .gray .vertical {
+	top: 25%;
+
+	transform: rotate(-90deg) translate(-25%, -50%);
+}
+
+.brand-lines .text p {
+	color: var(--deep-blue);
+	font-size: 0.9rem;
+}
+.round-logos img {
+	width: 25%;
+}
+/* right */
+.brand-lines .right div {
+	flex: 0 0 50%;
+	height: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+.brand-lines .right div img {
+	width: 60%;
+}
+.brand-lines .right div:nth-child(1) {
+	background-color: var(--bg-blue);
+}
+.brand-lines .right div:nth-child(1) p {
+	bottom: 50px;
+	position: absolute;
+	color: var(--deep-blue);
+}
+
+.brand-lines .right div:nth-child(2) img {
+	width: 90%;
+}
+.brand-lines .right div:nth-child(2) img.logo-abs {
+	position: absolute;
+	display: block;
+	width: 25%;
+	bottom: 20px;
+	right: 20px;
+}
+.brand-lines .right div:nth-child(3) {
+	background-color: var(--gray-background);
+	position: relative;
+}
+.brand-lines .right div:nth-child(3) p {
+	color: var(--deep-blue);
+	font-size: 0.95rem;
+}
+.brand-lines .right div:nth-child(3) .logo-abs {
+	width: 25%;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.brand-lines .right div:nth-child(4) {
+	background-color: var(--bg-green);
+}
+.right blockquote {
+	font-size: 0.85rem;
+	font-style: italic;
+	color: var(--deep-blue);
+}
+.right blockquote span {
+	font-size: 2rem;
+	color: var(--bg-blue);
+}
+/******************
+    FOOTER
+*******************/
+
+footer {
+	background-color: var(--deep-blue);
+	margin-top: 50px;
+}
+.row {
+	width: 80%;
+	height: 45vh;
+	margin: 0 auto;
+	display: flex;
+	padding: 100px 0 50px 0;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+footer .row article {
+	line-height: 1.5;
+}
+.row article h4 {
+	color: white;
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+.row article p,
+.row article a,
+.row article ul li {
+	color: white;
+	letter-spacing: 1px;
+	font-size: 0.95rem;
+	font-weight: 300;
+	text-decoration: none;
+}
+.row article div a.blue {
+	color: var(--text-blue) !important;
+}
+.row article div a.blue span {
+	color: white;
+}
+.row article {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+.underline {
+	text-decoration: underline !important;
+}
+.row article div {
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.row article:nth-child(3),
+.row article:nth-child(4) {
+	justify-content: unset;
+}
+.row article form input {
+	background: var(--deep-blue);
+	border: 1px solid var(--text-blue);
+	width: 70%;
+	height: 30px;
+	padding: 0 20px;
+	color: var(--text-blue);
+	margin-top: 20px;
+}
+.row article form input:focus {
+	border: none;
+}
+.row article form button {
+	height: 30px;
+	width: 80px;
+	background: transparent;
+	border: 1px solid var(--text-blue);
+	border-left: none;
+	color: var(--text-blue);
+}
