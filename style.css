@@ -143,6 +143,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	height: 90vh;
 	position: relative;
 }
@@ -218,6 +219,7 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 	height: 100vh;
 }
 section article {
@@ -234,6 +236,7 @@ section article {
 	height: 50%;
 
 	display: flex;
+	/* flex-wrap: wrap; */
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
@@ -329,6 +332,7 @@ section article {
 	width: 80%;
 	margin: 0 auto;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -575,6 +579,7 @@ footer {
 	display: flex;
 	padding: 100px 0 50px 0;
 	align-items: flex-start;
+	/* flex-wrap: wrap; */
 	justify-content: space-between;
 }
 footer .row article {
@@ -640,6 +645,9 @@ footer .row article {
 	border-left: none;
 	color: var(--text-blue);
 }
+
+/* RESPONSIVE */
+
 @media (max-width: 1602px) {
 	.news .wrapper {
 		justify-content: center;
@@ -648,9 +656,9 @@ footer .row article {
 		flex: 0 0 80%;
 		display: flex;
 		flex-direction: column;
-
 		height: 40%;
 	}
+
 	.card-body:nth-child(3),
 	.card-body:last-child {
 		display: none;
@@ -807,43 +815,346 @@ footer .row article {
 		width: 40%;
 		margin-top: 10px;
 	}
-	@media (max-width: 1092px) {
-		.row article h4 {
-			font-size: 1.1rem;
-			letter-spacing: 1.5px;
-		}
-		.row article p,
-		.row article a,
-		.row article ul li {
-			font-size: 0.85rem;
-			font-weight: 300;
-		}
-		.row article form input {
-			background: var(--deep-blue);
-			border: 1px solid var(--text-blue);
-			width: 60%;
-		}
+}
+@media (max-width: 1092px) {
+	.slide .owl-carousel {
+		top: 60%;
 
-		.row article form button {
-			height: 30px;
-			width: 60px;
-		}
-		.row article form {
-			margin-bottom: 50px;
-		}
-		.row article:last-child a {
-			font-size: 0.8rem;
-		}
+		width: 75%;
 	}
-	@media (max-width: 970px) {
-		.health article div h3 {
-			margin-bottom: 0.9rem;
-			font-size: 1.6rem;
+	.row article h4 {
+		font-size: 1.1rem;
+		letter-spacing: 1.5px;
+	}
+	.row article p,
+	.row article a,
+	.row article ul li {
+		font-size: 0.85rem;
+		font-weight: 300;
+	}
+	.row article form input {
+		background: var(--deep-blue);
+		border: 1px solid var(--text-blue);
+		width: 60%;
+	}
 
-			margin-top: 15px;
-		}
-		.health article div p {
-			font-size: 0.8rem;
-		}
+	.row article form button {
+		height: 30px;
+		width: 60px;
+	}
+	.row article form {
+		margin-bottom: 50px;
+	}
+	.row article:last-child a {
+		font-size: 0.8rem;
+	}
+}
+@media (max-width: 970px) {
+	header > img {
+		width: 15%;
+	}
+
+	.slide .item h2 {
+		font-size: 2.1rem;
+	}
+	.health article div h3 {
+		margin-bottom: 0.9rem;
+		font-size: 1.6rem;
+
+		margin-top: 15px;
+	}
+	.health article div p {
+		font-size: 0.8rem;
+	}
+}
+@media (max-width: 930px) {
+	.web-news {
+		height: unset;
+	}
+	.web-news .webshop {
+		flex: 0 0 100%;
+		padding: 50px 0;
+		height: auto;
+	}
+	.web-news .wrapper .text {
+		padding-left: 50px;
+	}
+	.web-news .news {
+		flex: 0 0 100%;
+		height: auto;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.web-news .news .wrapper {
+		justify-content: space-between;
+	}
+	.card-body {
+		flex: 0 0 48%;
+		height: auto;
+		margin-bottom: 50px;
+	}
+	.card-body .card-img {
+		display: block;
+	}
+	.card-content {
+		padding-bottom: 20px;
+	}
+	.card-body:nth-child(3),
+	.card-body:last-child {
+		display: flex;
+	}
+	footer .row {
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+	footer .row article {
+		flex: 0 0 22%;
+	}
+	footer .row article:last-child {
+		flex: 0 0 60%;
+		margin-top: 30px;
+	}
+}
+@media (max-width: 786px) {
+	header {
+		height: auto;
+	}
+	header .prduct-left {
+		width: 100%;
+		height: 65vh;
+	}
+	header .prduct-left img {
+		width: 70%;
+	}
+	header .slide {
+		width: 100%;
+		height: 65vh;
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.slide .owl-carousel {
+		position: relative;
+		top: 0;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		-moz-transform: translate(0, 0);
+	}
+	header > img {
+		position: absolute;
+		width: 20%;
+		left: 50%;
+		transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);
+		-ms-transform: translate(-50%, 0);
+		-moz-transform: translate(-50%, 0);
+	}
+	/* HEALT */
+
+	section {
+		height: auto;
+	}
+	section article {
+		flex: 0 0 100%;
+		height: 50vh;
+	}
+	.health .right {
+		border-top: 1px solid var(--deep-blue);
+	}
+	.health .right div {
+		height: 50%;
+	}
+	.health .right div img {
+		width: 25%;
+	}
+	.health .left {
+		background-image: url(img/morning-img.png);
+		background-size: cover;
+		background-position: center;
+		height: 50vh;
+		justify-content: flex-end !important;
+	}
+	.brand-lines .right {
+		height: 80vh;
+	}
+	.brand-lines .right div {
+		height: 50%;
+	}
+	.brand-lines .right div img {
+		width: 40%;
+	}
+	.brand-lines .right div:nth-child(2) img {
+		width: 70%;
+	}
+	.brand-lines .right div:nth-child(3) img:nth-child(2) {
+		width: 30%;
+	}
+}
+
+/* MOBILES */
+@media (max-width: 620px) {
+	nav {
+		display: none;
+	}
+	header {
+		height: auto;
+	}
+	header .prduct-left {
+		width: 100%;
+		height: 55vh;
+	}
+
+	header .prduct-left img {
+		width: 80%;
+	}
+	header .slide {
+		width: 100%;
+		height: 55vh;
+	}
+	.slide .owl-carousel {
+		width: 95%;
+	}
+	.health {
+		height: auto;
+	}
+	.health .right {
+		height: auto;
+	}
+	.health .right div img {
+		width: 20%;
+	}
+	.health .left {
+		height: 50vh;
+	}
+	.health .left div {
+		flex: 0 0 100%;
+		height: 50%;
+	}
+	.health .right div {
+		flex: 0 0 100%;
+		height: 40vh;
+
+		flex-wrap: wrap;
+	}
+	.health .right div:nth-child(2) {
+		background-color: var(--bg-blue);
+	}
+	.health .right div h2 {
+		font-size: 3rem;
+	}
+	.health .right div h3 {
+		font-size: 2.2rem;
+	}
+	.health .right div p {
+		font-size: 0.9rem;
+	}
+
+	.vertical {
+		position: relative;
+		font-size: 3.4rem;
+		top: none;
+		left: none;
+		margin-bottom: 50px;
+
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+	}
+	.news {
+		padding: 50px 20px;
+	}
+	.web-news .wrapper img {
+		width: 40%;
+	}
+	.web-news .wrapper h4 {
+		font-size: 2.3rem;
+		margin-bottom: 30px;
+	}
+	.web-news .wrapper {
+		width: 100%;
+	}
+
+	.card-body {
+		flex: 0 0 100%;
+
+		height: 50%;
+	}
+	.card-body .card-img img {
+		width: 100%;
+		height: 100%;
+	}
+	.card-body .card-heading h4 {
+		font-size: 1.5rem;
+	}
+	.brand-lines {
+		height: auto;
+	}
+	.brand-lines .left .vertical {
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+	.brand-lines .left {
+		height: 50vh;
+	}
+	.brand-lines .left .gray {
+		height: 25vh;
+	}
+	footer .row {
+		justify-content: center;
+		width: 95%;
+	}
+
+	footer .row article:nth-child(1),
+	footer .row article:nth-child(2),
+	footer .row article:nth-child(3),
+	footer .row article:nth-child(4) {
+		flex: 0 0 45%;
+		margin-bottom: 50px;
+	}
+	footer .row article:nth-child(5) {
+		flex: 0 0 100%;
+	}
+}
+@media (max-width: 380px) {
+	.brand-lines .right {
+		height: auto;
+	}
+	.brand-lines .vertical {
+		font-size: 3rem;
+		width: 100%;
+		text-align: center;
+	}
+	.brand-lines .right div {
+		flex: 0 0 100%;
+		height: 40vh;
+	}
+	.brand-lines .text {
+		width: 90%;
+
+		padding: 0 30px;
+	}
+	.brand-lines .text p {
+		margin-top: 40px;
+	}
+
+	.brand-lines .right div:nth-child(3) .logo-abs {
+		width: 25%;
+		position: absolute;
+		top: unset;
+		bottom: 20px;
+		right: 20px;
+	}
+	.brand-lines .left .round-logos {
+		width: 100%;
+	}
+	.round-logos img {
+		width: 27%;
+		margin-right: 20px;
 	}
 }
