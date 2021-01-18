@@ -31,3 +31,9 @@ $(".customPrevBtn").click(function () {
 	// Parameters has to be in square bracket '[]'
 	owl.trigger("prev.owl.carousel", [300]);
 });
+
+// function toggleDropDown() {
+
+$(".dropdownLink").click(function () {
+	$(".dropdown").toggleClass("dropdown-active");
+});

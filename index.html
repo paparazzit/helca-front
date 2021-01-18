@@ -12,32 +12,34 @@
 	<body>
 		<nav class="navbar">
 			<a class="logo" href=""><img src="img/nav-logo.png" alt="" /></a>
+			<div class="dropdown" id="navbar-toggle">
+				<ul class="topnav">
+					<li><a class="nav-link" href="#home">about</a></li>
+					<li><a class="nav-link" href="#usluge">products</a></li>
+					<li><a class="nav-link" href="#projekti">contact</a></li>
+					<li><a class="nav-link" href="#kontakt">web shop</a></li>
+				</ul>
+				<div class="right">
+					<img src="img/search.png" alt="" />
+					<div class="socials">
+						<a href=""><img src="img/instagram.png" alt="" /></a>
+						<a href=""><img src="img/facebook.png" alt="" /></a>
+						<a href=""><img src="img/youtube.png" alt="" /></a>
+					</div>
+					<div class="shop">
+						<img src="img/shoping-cart.png" alt="" />
+						<p class="active">0</p>
+					</div>
+					<div class="lang">
+						<a href="" class="fr" id="fr">FR<span>/</span></a
+						><a href="" class="en active" id="en">EN<span>/</span></a>
+						<a href="" class="cn" id="cn">CN</a>
+					</div>
+				</div>
+			</div>
 
-			<ul class="topnav" id="navbar-toggle">
-				<li><a class="nav-link" href="#home">about</a></li>
-				<li><a class="nav-link" href="#usluge">products</a></li>
-				<li><a class="nav-link" href="#projekti">contact</a></li>
-				<li><a class="nav-link" href="#kontakt">web shop</a></li>
-			</ul>
-			<div class="right">
-				<img src="img/search.png" alt="" />
-				<div class="socials">
-					<a href=""><img src="img/instagram.png" alt="" /></a>
-					<a href=""><img src="img/facebook.png" alt="" /></a>
-					<a href=""><img src="img/youtube.png" alt="" /></a>
-				</div>
-				<div class="shop">
-					<img src="img/shoping-cart.png" alt="" />
-					<p class="active">0</p>
-				</div>
-				<div class="lang">
-					<a href="" class="fr" id="fr">FR<span>/</span></a
-					><a href="" class="en active" id="en">EN<span>/</span></a>
-					<a href="" class="cn" id="cn">CN</a>
-				</div>
-				<div class="dropdownLink">
-					<a onclick="toggleDropDown()" href="javascript:void(0)">&#9776;</a>
-				</div>
+			<div class="dropdownLink">
+				<a onclick="toggleDropDown()" href="javascript:void(0)">&#9776;</a>
 			</div>
 		</nav>
 		<!-- HEADER -->
