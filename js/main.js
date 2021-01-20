@@ -3,8 +3,9 @@ $(document).ready(function () {
 		loop: true,
 		margin: 10,
 		nav: false,
+		autoplay: true,
+		autoplayTimeout: 100000,
 
-		// autoWidth: true,
 		responsive: {
 			0: {
 				items: 1,
@@ -20,20 +21,28 @@ $(document).ready(function () {
 });
 
 var owl = $(".owl-carousel");
-// owl.owlCarousel();
-// Go to the next item
+
 $(".customNextBtn").click(function () {
 	owl.trigger("next.owl.carousel");
 });
-// Go to the previous item
+
 $(".customPrevBtn").click(function () {
-	// With optional speed parameter
-	// Parameters has to be in square bracket '[]'
 	owl.trigger("prev.owl.carousel", [300]);
 });
-
-// function toggleDropDown() {
 
 $(".dropdownLink").click(function () {
 	$(".dropdown").toggleClass("dropdown-active");
 });
+
+$(".owl-carousel").animate({ opacity: "1" }, 1000);
+
+var width = $(window).width();
+window.onresize = function () {
+	location.reload();
+};
+if (width < 890) {
+	$(".float-bg").animate({ top: "-100%" }, 800);
+	console.log("mali ekran");
+} else {
+	$(".float-bg").animate({ left: "-100%" }, 800);
+}

@@ -7,9 +7,12 @@
 		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="responsive.css" />
 		<title>HELCA</title>
 	</head>
 	<body>
+		<!-- NAV -->
+
 		<nav class="navbar">
 			<a class="logo" href=""><img src="img/nav-logo.png" alt="" /></a>
 			<div class="dropdown" id="navbar-toggle">
@@ -39,12 +42,13 @@
 			</div>
 
 			<div class="dropdownLink">
-				<a onclick="toggleDropDown()" href="javascript:void(0)">&#9776;</a>
+				<a href="javascript:void(0)">&#9776;</a>
 			</div>
 		</nav>
 		<!-- HEADER -->
 		<header>
-			<article class="prduct-left">
+			<article class="left">
+				<div class="float-bg"></div>
 				<img src="img/proizvod grupisan.png" alt="" />
 			</article>
 			<img class="logo-round" src="img/logo.png" alt="" />
@@ -86,16 +90,23 @@
 				</div>
 			</article>
 		</header>
-		<section class="health">
-			<article class="right">
-				<div>
-					<img src="img/leaf.png" alt="" />
+
+		<!-- HEALTH -->
+
+		<section class="health box-art">
+			<article class="left square">
+			<div class="square-wrapper">
+				<div class="box">
+					<div class="content "><img src="img/leaf.png" alt="" /></div>
+					
 				</div>
-				<div>
-					<h2>health</h2>
-					<p>We treasure the relationship between you and your body.</p>
+				<div class="box">
+					<div class="content"><h2>health</h2>
+						<p>We treasure the relationship between you and your body.</p></div>
+					
 				</div>
-				<div>
+				<div class="box">
+				<div class="content ">
 					<h3>
 						revolution begins <br />
 						with hygiene
@@ -105,32 +116,49 @@
 						keeps you at ease when choosing the products that you can count on.
 					</p>
 				</div>
-				<div>
-					<h2>
-						we know <br />
-						your needs
-					</h2>
-					<p>...and we take them seriously. Your comfort is our priority.</p>
 				</div>
+				<div class="box blue">
+					<div class="content ">
+						<h2>
+							we know <br />
+							your needs
+						</h2>
+						<p>...and we take them seriously. Your comfort is our priority.</p>
+					
+					</div>
+			</div>
+			</div>
+			
 			</article>
-			<article class="left">
-				<div>
-					<h2>take care</h2>
-					<p>
-						Taking care of yourself is the best selfish thing you can do - for
-						yourself and for others.
-					</p>
+			<article class="right square">
+				<div class="square-wrapper">
+					<div class="box ">
+						<div class="content">
+							<h2>take care</h2>
+						<p>
+							Taking care of yourself is the best selfish thing you can do - for
+							yourself and for others.
+						</p>
+						</div>
+						
+					</div>
 				</div>
+
+			
 			</article>
 		</section>
+
+		<!-- WEB-NEWS -->
 		<section class="web-news">
 			<article class="webshop">
-				<h2 class="vertical">webshop</h2>
+				<div class="vertical">
+					<h2>webshop</h2>
+				</div>
 				<div class="wrapper">
 					<img src="img/webshop-group.png" alt="" />
 					<div class="text">
-						<h4>coconut oil shower gel</h4>
-						<p class="cut-text">
+						<h3>coconut oil shower gel</h3>
+						<p>
 							Pampering time! Mindfully picked enchanting coconut scent meets
 							deep nourishment, as coconut oil is famous for its vitamins and
 							wonders. Gives your body hydration it needs and ensures a
@@ -144,133 +172,204 @@
 				</div>
 			</article>
 			<article class="news">
-				<h2 class="vertical">news</h2>
+				<div class="vertical">
+					<h2>news</h2>
+				</div>
 				<div class="wrapper">
-					<div class="card-body">
+					<div class="card">
 						<div class="card-img">
 							<img src="img/card-img_1.png" alt="" />
 						</div>
-						<div class="card-text">
-							<div class="card-heading">
-								<h4>LOREM IPSUM</h4>
+						<div class="card-body">
+							<div class="card-headlines">
+								<h4>Lorem Ipsum</h4>
 								<p class="meta">July 07, 2020</p>
 							</div>
-							<div class="card-content">
-								<p class="subheading">&#40;podnaslov&#41;</p>
+							<div class="card-text">
+								<p class="subtitle">(subtitle)</p>
 								<p>
-									Proin odio sapien, ultricies sed felis eget, cursus mattis
-									leo. Aliquam non rutrum lacus, bibendum interdum nisl...
-									<a href="">Read More</a>
+									Cras pellentesque elit mauris, ac porta massa pretium eu.
+									Integer sed interdum eros, blandit fringilla dolor. Nulla
+									volutpat quam... <a href="">Read More</a>
 								</p>
-
-								<div class="buttons">
-									<button class="btn">read more</button>
-									<button class="btn green">share</button>
-								</div>
+								<button class="btn">read more</button>
+								<button class="btn green">share</button>
 							</div>
 						</div>
 					</div>
 
-					<div class="card-body">
-						<div class="card-img">
-							<img src="img/card-man.png" alt="" />
-						</div>
-
-						<div class="card-text">
-							<div class="card-heading">
-								<h4>LOREM IPSUM</h4>
-								<p class="meta">July 07, 2020</p>
-							</div>
-							<div class="card-content">
-								<p class="subheading">&#40;podnaslov&#41;</p>
-								<p>
-									Proin odio sapien, ultricies sed felis eget, cursus mattis
-									leo. Aliquam non rutrum lacus, bibendum interdum nisl...
-									<a href="">Read More</a>
-								</p>
-
-								<div class="buttons">
-									<button class="btn">read more</button>
-									<button class="btn green">share</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="card-body">
-						<div class="card-img">
-							<img src="img/card-palm.png" alt="" />
-						</div>
-
-						<div class="card-text">
-							<div class="card-heading">
-								<h4>LOREM IPSUM</h4>
-								<p class="meta">July 07, 2020</p>
-							</div>
-							<div class="card-content">
-								<p class="subheading">&#40;podnaslov&#41;</p>
-								<p>
-									Proin odio sapien, ultricies sed felis eget, cursus mattis
-									leo. Aliquam non rutrum lacus, bibendum interdum nisl...
-									<a href="">Read More</a>
-								</p>
-
-								<div class="buttons">
-									<button class="btn">read more</button>
-									<button class="btn green">share</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="card-body">
+					<div class="card">
 						<div class="card-img">
 							<img src="img/card-img_1.png" alt="" />
 						</div>
-
-						<div class="card-text">
-							<div class="card-heading">
-								<h4>LOREM IPSUM</h4>
+						<div class="card-body">
+							<div class="card-headlines">
+								<h4>Lorem Ipsum</h4>
 								<p class="meta">July 07, 2020</p>
 							</div>
-							<div class="card-content">
-								<p class="subheading">&#40;podnaslov&#41;</p>
+							<div class="card-text">
+								<p class="subtitle">(subtitle)</p>
 								<p>
-									Proin odio sapien, ultricies sed felis eget, cursus mattis
-									leo. Aliquam non rutrum lacus, bibendum interdum nisl...
-									<a href="">Read More</a>
+									Cras pellentesque elit mauris, ac porta massa pretium eu.
+									Integer sed interdum eros, blandit fringilla dolor. Nulla
+									volutpat quam... <a href="">Read More</a>
 								</p>
-
-								<div class="buttons">
-									<button class="btn">read more</button>
-									<button class="btn green">share</button>
-								</div>
+								<button class="btn">read more</button>
+								<button class="btn green">share</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-img">
+							<img src="img/card-img_1.png" alt="" />
+						</div>
+						<div class="card-body">
+							<div class="card-headlines">
+								<h4>Lorem Ipsum</h4>
+								<p class="meta">July 07, 2020</p>
+							</div>
+							<div class="card-text">
+								<p class="subtitle">(subtitle)</p>
+								<p>
+									Cras pellentesque elit mauris, ac porta massa pretium eu.
+									Integer sed interdum eros, blandit fringilla dolor. Nulla
+									volutpat quam... <a href="">Read More</a>
+								</p>
+								<button class="btn">read more</button>
+								<button class="btn green">share</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-img">
+							<img src="img/card-img_1.png" alt="" />
+						</div>
+						<div class="card-body">
+							<div class="card-headlines">
+								<h4>Lorem Ipsum</h4>
+								<p class="meta">July 07, 2020</p>
+							</div>
+							<div class="card-text">
+								<p class="subtitle">(subtitle)</p>
+								<p>
+									Cras pellentesque elit mauris, ac porta massa pretium eu.
+									Integer sed interdum eros, blandit fringilla dolor. Nulla
+									volutpat quam... <a href="">Read More</a>
+								</p>
+								<button class="btn">read more</button>
+								<button class="btn green">share</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-img">
+							<img src="img/card-img_1.png" alt="" />
+						</div>
+						<div class="card-body">
+							<div class="card-headlines">
+								<h4>Lorem Ipsum</h4>
+								<p class="meta">July 07, 2020</p>
+							</div>
+							<div class="card-text">
+								<p class="subtitle">(subtitle)</p>
+								<p>
+									Cras pellentesque elit mauris, ac porta massa pretium eu.
+									Integer sed interdum eros, blandit fringilla dolor. Nulla
+									volutpat quam... <a href="">Read More</a>
+								</p>
+								<button class="btn">read more</button>
+								<button class="btn green">share</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-img">
+							<img src="img/card-img_1.png" alt="" />
+						</div>
+						<div class="card-body">
+							<div class="card-headlines">
+								<h4>Lorem Ipsum</h4>
+								<p class="meta">July 07, 2020</p>
+							</div>
+							<div class="card-text">
+								<p class="subtitle">(subtitle)</p>
+								<p>
+									Cras pellentesque elit mauris, ac porta massa pretium eu.
+									Integer sed interdum eros, blandit fringilla dolor. Nulla
+									volutpat quam... <a href="">Read More</a>
+								</p>
+								<button class="btn">read more</button>
+								<button class="btn green">share</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<a href="" class="link">all news</a>
+				</div>
+
+				<a href="">all news...</a>
 			</article>
 		</section>
 
-		<section class="brand-lines">
-			<article class="left">
-				<h2 class="vertical">brand-lines</h2>
-				<div class="gray"></div>
-				<div class="round-logos">
-					<img src="img/blue-logo-round.png" alt="" />
-					<img src="img/green-logo-round.png" alt="" />
-					<img src="img/pink-logo-round.png" alt="" />
+		<!-- BRAND-LINES -->
+
+		<section class="brand-lines box-art">
+			<article class="left square">
+				<div class="square-wrapper">
+					<div class="vertical"><h2 >brand-lines</h2></div>
+					<div class="gray">
+						
+					</div>
+					<div class="round-logos">
+						<img src="img/blue-logo-round.png" alt="" />
+						<img src="img/green-logo-round.png" alt="" />
+						<img src="img/pink-logo-round.png" alt="" />
+					</div>
+					<div class="text">
+						<p>
+							We are on a mission to optimize your daily hygiene in the way that
+							keeps you at ease when choosing the products that you can count on.
+						</p>
+					</div>
 				</div>
-				<div class="text">
-					<p>
-						We are on a mission to optimize your daily hygiene in the way that
-						keeps you at ease when choosing the products that you can count on.
-					</p>
-				</div>
+			
 			</article>
-			<article class="right">
-				<div>
+			<article class="right square">
+				<div class="square-wrapper">
+					<div class="box">
+						<div class="content one">
+							
+								<img src="img/mask.png" alt="" />
+								<p>stay safe</p>
+							<div class="bg float"></div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="content two">
+							<img src="img/conditioner.png" alt="" />
+							<img class="logo-abs" src="img/green-logo-vertical.png" alt="" />
+							<div class="float"></div>
+						
+						</div>
+					</div>
+					<div class="box">
+						<div class="content three">
+							<img class="logo-abs" src="img/helca logo pink.png" alt="" />
+					<img src="img/wipes.png" alt="" />
+					<p>designed for little humans</p>
+					<div class="float"></div>
+						</div>
+					</div>
+					<div class="box"><div class="content four">
+						<blockquote>
+							<span> &ldquo;</span>
+							there is no bad hairday when you use helca hair conditioner
+							<span>&rdquo;</span>
+						</blockquote>
+						<div class="float"></div>
+					</div></div>
+				</div>
+				
+				<!-- <div>
 					<img src="img/mask.png" alt="" />
 					<p>stay safe</p>
 				</div>
@@ -278,6 +377,7 @@
 					<img src="img/conditioner.png" alt="" />
 					<img class="logo-abs" src="img/green-logo-vertical.png" alt="" />
 				</div>
+
 				<div>
 					<img class="logo-abs" src="img/helca logo pink.png" alt="" />
 					<img src="img/wipes.png" alt="" />
@@ -289,7 +389,7 @@
 						there is no bad hairday when you use helca hair conditioner
 						<span>&rdquo;</span>
 					</blockquote>
-				</div>
+				</div> -->
 			</article>
 		</section>
 

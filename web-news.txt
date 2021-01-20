@@ -1,0 +1,130 @@
+<section class="web-news">
+			<article class="webshop">
+				<h2 class="vertical">webshop</h2>
+				<div class="wrapper">
+					<img src="img/webshop-group.png" alt="" />
+					<div class="text">
+						<h4>coconut oil shower gel</h4>
+						<p>
+							Pampering time! Mindfully picked enchanting coconut scent meets
+							deep nourishment, as coconut oil is famous for its vitamins and
+							wonders. Gives your body hydration it needs and ensures a
+							pleasurable and clean start of the day. Body cleanser with formula
+							mild enough for everyday usage.
+						</p>
+						<p>Choose your size - 500ml & 1000ml</p>
+						<p>Now available on our web shop</p>
+						<button class="btn">visit our web shop</button>
+					</div>
+				</div>
+			</article>
+			<article class="news">
+				<h2 class="vertical">news</h2>
+				<div class="wrapper">
+					<!-- cards -->
+					<div class="card-body">
+						<div class="card-img">
+							<img src="img/card-img_1.png" alt="" />
+						</div>
+						<div class="card-text">
+							<div class="card-heading">
+								<h4>LOREM IPSUM</h4>
+								<p class="meta">July 07, 2020</p>
+							</div>
+							<div class="card-content">
+								<p class="subheading">&#40;podnaslov&#41;</p>
+								<p>
+									Proin odio sapien, ultricies sed felis eget, cursus mattis
+									leo. Aliquam non rutrum lacus, bibendum interdum nisl...
+									<a href="">Read More</a>
+								</p>
+
+								<div class="buttons">
+									<button class="btn">read more</button>
+									<button class="btn green">share</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<div class="card-img">
+							<img src="img/card-man.png" alt="" />
+						</div>
+
+						<div class="card-text">
+							<div class="card-heading">
+								<h4>LOREM IPSUM</h4>
+								<p class="meta">July 07, 2020</p>
+							</div>
+							<div class="card-content">
+								<p class="subheading">&#40;podnaslov&#41;</p>
+								<p>
+									Proin odio sapien, ultricies sed felis eget, cursus mattis
+									leo. Aliquam non rutrum lacus, bibendum interdum nisl...
+									<a href="">Read More</a>
+								</p>
+
+								<div class="buttons">
+									<button class="btn">read more</button>
+									<button class="btn green">share</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<div class="card-img">
+							<img src="img/card-palm.png" alt="" />
+						</div>
+
+						<div class="card-text">
+							<div class="card-heading">
+								<h4>LOREM IPSUM</h4>
+								<p class="meta">July 07, 2020</p>
+							</div>
+							<div class="card-content">
+								<p class="subheading">&#40;podnaslov&#41;</p>
+								<p>
+									Proin odio sapien, ultricies sed felis eget, cursus mattis
+									leo. Aliquam non rutrum lacus, bibendum interdum nisl...
+									<a href="">Read More</a>
+								</p>
+
+								<div class="buttons">
+									<button class="btn">read more</button>
+									<button class="btn green">share</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<div class="card-img">
+							<img src="img/card-img_1.png" alt="" />
+						</div>
+
+						<div class="card-text">
+							<div class="card-heading">
+								<h4>LOREM IPSUM</h4>
+								<p class="meta">July 07, 2020</p>
+							</div>
+							<div class="card-content">
+								<p class="subheading">&#40;podnaslov&#41;</p>
+								<p>
+									Proin odio sapien, ultricies sed felis eget, cursus mattis
+									leo. Aliquam non rutrum lacus, bibendum interdum nisl...
+									<a href="">Read More</a>
+								</p>
+
+								<div class="buttons">
+									<button class="btn">read more</button>
+									<button class="btn green">share</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="" class="link">all news</a>
+			</article>
+		</section>
