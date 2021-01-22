@@ -37,9 +37,9 @@ $(".dropdownLink").click(function () {
 $(".owl-carousel").animate({ opacity: "1" }, 1000);
 
 var width = $(window).width();
-window.onresize = function () {
-	location.reload();
-};
+// window.onresize = function () {
+// 	location.reload();
+// };
 if (width < 890) {
 	$(".float-bg").animate({ top: "-100%" }, 800);
 	console.log("mali ekran");
