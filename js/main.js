@@ -88,17 +88,42 @@ $(".remove").click(function () {
 // product list
 
 $("#gel").click(function () {
-	$("#prod-1").removeClass("hide").addClass("show");
+	$("#prod-1").addClass("show").removeClass("hide");
 	$("#prod-2").removeClass("show").addClass("hide");
 	$("#prod-3").removeClass("show").addClass("hide");
+	$("#prod-4").removeClass("show").addClass("hide");
+	$("#gel").addClass("active-nav");
+	$("#spray").removeClass("active-nav");
+	$("#wipes").removeClass("active-nav");
+	$("#conditioner").removeClass("active-nav");
 });
 $("#spray").click(function () {
-	$("#prod-2").removeClass("hide").addClass("show");
+	$("#prod-2").addClass("show").removeClass("hide");
 	$("#prod-1").removeClass("show").addClass("hide");
 	$("#prod-3").removeClass("show").addClass("hide");
+	$("#prod-4").removeClass("show").addClass("hide");
+	$("#spray").addClass("active-nav");
+	$("#gel").removeClass("active-nav");
+	$("#wipes").removeClass("active-nav");
+	$("#conditioner").removeClass("active-nav");
 });
 $("#wipes").click(function () {
-	$("#prod-3").removeClass("hide").addClass("show");
+	$("#prod-3").addClass("show").removeClass("hide");
 	$("#prod-2").removeClass("show").addClass("hide");
 	$("#prod-1").removeClass("show").addClass("hide");
+	$("#prod-4").removeClass("show").addClass("hide");
+	$("#wipes").addClass("active-nav");
+	$("#spray").removeClass("active-nav");
+	$("#gel").removeClass("active-nav");
+	$("#conditioner").removeClass("active-nav");
+});
+$("#conditioner").click(function () {
+	$("#prod-4").addClass("show").removeClass("hide");
+	$("#prod-2").removeClass("show").addClass("hide");
+	$("#prod-1").removeClass("show").addClass("hide");
+	$("#prod-3").removeClass("show").addClass("hide");
+	$("#conditioner").addClass("active-nav");
+	$("#spray").removeClass("active-nav");
+	$("#wipes").removeClass("active-nav");
+	$("#gel").removeClass("active-nav");
 });

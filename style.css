@@ -1002,6 +1002,11 @@ footer .row article {
 	background-position: center;
 	background-size: cover;
 }
+.img-2 {
+	background-image: url(img/hygiene-header.png);
+	background-position: center;
+	background-size: cover;
+}
 .header-img .left {
 	flex: 0 0 50%;
 }
@@ -1043,31 +1048,28 @@ li {
 
 /* Products list*/
 .relative {
+	margin: 50px 0 200px 0;
+	/* border: 2px solid red; */
 	position: relative;
+	height: auto;
 }
 .product-list {
-	margin: 50px 0 200px 0;
 	justify-content: space-between;
 }
+
 .hide {
 	opacity: 0;
-	transition: 0.8s all ease-in-out;
+	visibility: hidden;
+	transition: 0.5s all ease-in-out;
+	height: 0px !important;
+	overflow: hidden;
 }
 .show {
+	visibility: visible;
+	transition: 0.5s all ease-in-out;
 	opacity: 1;
-	transition: 0.8s all ease-in-out;
 }
 
-#prod-2 {
-	top: 0;
-	bottom: 0;
-	position: absolute;
-}
-#prod-3 {
-	top: 0;
-	bottom: 0;
-	position: absolute;
-}
 .product-list h2,
 .product-list p,
 .product-list a {
