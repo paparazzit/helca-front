@@ -18,6 +18,8 @@ $(document).ready(function () {
 			},
 		},
 	});
+	$(".sidebar h2").addClass("animateH2");
+	$(".cta form").addClass("animateH2");
 });
 
 var owl = $(".owl-carousel");
@@ -42,7 +44,61 @@ var width = $(window).width();
 // };
 if (width < 890) {
 	$(".float-bg").animate({ top: "-100%" }, 800);
-	console.log("mali ekran");
+	$(".pozadina").animate({ top: "0" }, 800);
+	$(".left .content").animate({ opacity: "1" }, 400);
+}
+if (width < 650) {
+	$(".products-logo").animate({ bottom: "10%" }, 800);
 } else {
 	$(".float-bg").animate({ left: "-100%" }, 800);
+	$(".pozadina").animate({ left: "0" }, 800);
+	$(".left .content").animate({ opacity: "1" }, 400);
+	$(".products-logo").animate({ bottom: "35%" }, 800);
 }
+
+$(window).scroll(function () {
+	if ($("#leaf").visible() && width > 450) {
+		$(".float-cube").delay(400).animate({ left: "100%" }, 800);
+	}
+	if ($("#box").visible() && width <= 450) {
+		$(".float-cube").animate({ top: "-100%" }, 800);
+	}
+	if ($(".one").visible()) {
+		$(".one .float").animate({ left: "0%" }, 800);
+		$(".four .float").animate({ left: "0%" }, 800);
+	}
+});
+
+// prod card counter
+$(".quantity .add").click(function () {
+	if ($(this).prev().val() < 999) {
+		$(this)
+			.prev()
+			.val(+$(this).prev().val() + 1);
+	}
+});
+$(".remove").click(function () {
+	if ($(this).next().val() > 0) {
+		$(this)
+			.next()
+			.val(+$(this).next().val() - 1);
+	}
+});
+
+// product list
+
+$("#gel").click(function () {
+	$("#prod-1").removeClass("hide").addClass("show");
+	$("#prod-2").removeClass("show").addClass("hide");
+	$("#prod-3").removeClass("show").addClass("hide");
+});
+$("#spray").click(function () {
+	$("#prod-2").removeClass("hide").addClass("show");
+	$("#prod-1").removeClass("show").addClass("hide");
+	$("#prod-3").removeClass("show").addClass("hide");
+});
+$("#wipes").click(function () {
+	$("#prod-3").removeClass("hide").addClass("show");
+	$("#prod-2").removeClass("show").addClass("hide");
+	$("#prod-1").removeClass("show").addClass("hide");
+});
