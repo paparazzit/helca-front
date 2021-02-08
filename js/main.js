@@ -1,35 +1,35 @@
 $(document).ready(function () {
-	$(".owl-carousel").owlCarousel({
+	$("#sync1").owlCarousel({
 		loop: true,
 		margin: 10,
 		nav: false,
-		autoplay: true,
-		autoplayTimeout: 100000,
-
-		responsive: {
-			0: {
-				items: 1,
-			},
-			600: {
-				items: 1,
-			},
-			1000: {
-				items: 1,
-			},
-		},
+		items: 1,
+		autoplay: false,
+		autoplayHoverPause: true,
+		smartSpeed: 800,
+		animateIn: "fadeIn",
+		animateOut: "fadeOut",
+		dots: false,
+		responsiveRefreshRate: 200,
 	});
+	$("#sync2").owlCarousel({
+		loop: true,
+		margin: 10,
+		nav: false,
+
+		items: 1,
+		autoplay: true,
+		autoplayHoverPause: true,
+		autoplayTimeout: 3000,
+		autoplaySpeed: 800,
+		animateIn: "fadeIn",
+		animateOut: "fadeOut",
+		dots: true,
+		responsiveRefreshRate: 200,
+	});
+
 	$(".sidebar h2").addClass("animateH2");
 	$(".cta form").addClass("animateH2");
-});
-
-var owl = $(".owl-carousel");
-
-$(".customNextBtn").click(function () {
-	owl.trigger("next.owl.carousel");
-});
-
-$(".customPrevBtn").click(function () {
-	owl.trigger("prev.owl.carousel", [300]);
 });
 
 $(".dropdownLink").click(function () {
@@ -47,13 +47,15 @@ if (width < 890) {
 	$(".pozadina").animate({ top: "0" }, 800);
 	$(".left .content").animate({ opacity: "1" }, 400);
 }
-if (width < 650) {
-	$(".products-logo").animate({ bottom: "10%" }, 800);
-} else {
+
+if (width > 890) {
 	$(".float-bg").animate({ left: "-100%" }, 800);
 	$(".pozadina").animate({ left: "0" }, 800);
 	$(".left .content").animate({ opacity: "1" }, 400);
 	$(".products-logo").animate({ bottom: "35%" }, 800);
+}
+if (width < 650) {
+	$(".products-logo").animate({ bottom: "10%" }, 800);
 }
 
 $(window).scroll(function () {
@@ -127,3 +129,17 @@ $("#conditioner").click(function () {
 	$("#wipes").removeClass("active-nav");
 	$("#gel").removeClass("active-nav");
 });
+
+var mybutton = document.getElementById("side-nav");
+
+window.onscroll = function () {
+	scrollFunction();
+};
+
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.opacity = "1";
+	} else {
+		mybutton.style.opacity = "0";
+	}
+}

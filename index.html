@@ -5,7 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/owl.carousel.min.css" />
 		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
-
+		<link
+		rel="stylesheet"
+		href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+		crossorigin="anonymous"
+	/>
 		<link rel="stylesheet" href="style.css" />
 		
 	
@@ -43,20 +48,33 @@
 			</div>
 
 			<div class="dropdownLink">
-				<a href="javascript:void(0)">&#9776;</a>
+				<a href="javascript:void(0)"><i class="fas fa-bars"></i></a>
 			</div>
 		</nav>
 		<!-- HEADER -->
 		<header>
-			<article class="left">
-			
-				<div class="float-bg"></div>
-				<img src="img/proizvod grupisan.png" alt="" />
+			<article class="left">			
+				<div class="float-bg"></div>							
+					<div id="sync1" class="owl-carousel owl-theme">
+						<div class="item" data-hash="zero">
+							<img src="img/proizvod grupisan.png" alt=""/>
+						</div>
+						<div class="item" data-hash="one">
+							<img src="img/proizvod grupisan - grupa2.png" alt="">
+						</div>
+						<div class="item" data-hash="two">
+							<img src="img/proizvod grupisan conditioner.png" alt="">
+						</div>
+						
+					
+					</div>
+				
+				
 			</article>
 			<img class="logo-round" src="img/logo.png" alt="" />
 			<article class="slide">
-				<div class="owl-carousel owl-theme">
-					<div class="item">
+				<div id="sync2"  class="owl-carousel owl-theme">
+					<div class="item" id="item-1" data-hash="zero">
 						<h2>antibacterical 1</h2>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -67,7 +85,7 @@
 						</p>
 						<button class="btn">find out more</button>
 					</div>
-					<div class="item">
+					<div class="item" id="item-2" data-hash="one">
 						<h2>antibacterical 2</h2>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -78,7 +96,7 @@
 						</p>
 						<button class="btn">find out more</button>
 					</div>
-					<div class="item">
+					<div class="item" id="item-3" data-hash="two">
 						<h2>antibacterical 3</h2>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit.
