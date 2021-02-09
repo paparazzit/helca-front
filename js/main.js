@@ -20,7 +20,7 @@ $(document).ready(function () {
 		items: 1,
 		autoplay: true,
 		autoplayHoverPause: true,
-		autoplayTimeout: 3000,
+		autoplayTimeout: 10000,
 		autoplaySpeed: 800,
 		animateIn: "fadeIn",
 		animateOut: "fadeOut",
@@ -36,18 +36,17 @@ $(".dropdownLink").click(function () {
 	$(".dropdown").toggleClass("dropdown-active");
 });
 
-$(".owl-carousel").animate({ opacity: "1" }, 1000);
-
+setTimeout(function () {
+	$(".slide-headline").addClass("text-blue");
+	$(".slide-text").addClass("text-black");
+}, 450);
 var width = $(window).width();
-// window.onresize = function () {
-// 	location.reload();
-// };
+
 if (width < 890) {
 	$(".float-bg").animate({ top: "-100%" }, 800);
 	$(".pozadina").animate({ top: "0" }, 800);
 	$(".left .content").animate({ opacity: "1" }, 400);
 }
-
 if (width > 890) {
 	$(".float-bg").animate({ left: "-100%" }, 800);
 	$(".pozadina").animate({ left: "0" }, 800);
@@ -59,10 +58,10 @@ if (width < 650) {
 }
 
 $(window).scroll(function () {
-	if ($("#leaf").visible() && width > 450) {
+	if ($("#health").visible() && width > 450) {
 		$(".float-cube").delay(400).animate({ left: "100%" }, 800);
 	}
-	if ($("#box").visible() && width <= 450) {
+	if ($("#health").visible() && width <= 450) {
 		$(".float-cube").animate({ top: "-100%" }, 800);
 	}
 	if ($(".one").visible()) {
